@@ -8,14 +8,14 @@ kite = KiteConnect(api_key=api_key)
 kite.set_access_token(open('secret/access_token.txt','r').read())
 
 def order():
-    orderid=kite.place_order(tradingsymbol="INFY", 
-                            quantity="1", 
-                            exchange="NSE", 
-                            transaction_type="BUY", 
-                            order_type="MARKET", 
-                            product="CNC", 
-                            validity="DAY", 
-                            variety="regular")
+    orderid=kite.place_order(tradingsymbol = "INFY", 
+                            quantity = "1", 
+                            exchange = "NSE", 
+                            transaction_type = "BUY", 
+                            order_type = "MARKET", 
+                            product = "CNC", 
+                            validity = "DAY", 
+                            variety = "regular")
     print(orderid)
 order()
 
